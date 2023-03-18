@@ -17,12 +17,12 @@ superuser: true
 role: Студент ФФМиЕН РУДН
 
 # Organizations/Affiliations to show in About widget
-organizations:
+Организация:
   - name: RUDN University
     url: https://www.rudn.ru/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Мои исследовательские интересы включают в себя IT и цифровую технику.
+bio: Мои исследовательские интересы включают в себя IT, цифровую технику и SMM.
 
 # Interests to show in About widget
 Интересы:
