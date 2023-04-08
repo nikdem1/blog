@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title:
-date: 2023-03-18
+date: 2023-04-08
 type: landing
 
 sections:
@@ -44,23 +44,23 @@ sections:
       text:
   - block: features
     content:
-      title: Skills
+      title: Навыки
       items:
-        - name: R
-          description: 90%
+        - name: C++
+          description: 40%
           icon: r-project
           icon_pack: fab
-        - name: Statistics
-          description: 100%
+        - name: Анализ данных и статистика
+          description: 50%
           icon: chart-line
           icon_pack: fas
-        - name: Photography
-          description: 10%
+        - name: Создание контента
+          description: 65%
           icon: camera-retro
           icon_pack: fas
   - block: experience
     content:
-      title: Experience
+      title: Опыт работы
       # Date format for experience
       #   Refer to https://wowchemy.com/docs/customization/#date-format
       date_format: Jan 2006
@@ -70,27 +70,19 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
+        - title: SMM-менеджер
+          company: ООО "Новое искусство"
           company_url: ''
           company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
+          location: Москва
+          date_start: '2023-02-28'
           date_end: ''
           description: |2-
-              Responsibilities include:
+              Обязанности:
 
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+              * Анализ статистики в социальных сетях
+              * Взаимодействие с аудиторией
+              * Создание медиаконтента
     design:
       columns: '2'
   - block: accomplishments
@@ -100,36 +92,20 @@ sections:
       subtitle:
       # Date format: https://wowchemy.com/docs/customization/#date-format
       date_format: Jan 2006
-      # Accomplishments.
+      # Достижения
       #   Add/remove as many `item` blocks below as you like.
       #   `title`, `organization`, and `date_start` are the required parameters.
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: https://www.coursera.org
-          date_end: ''
-          date_start: '2021-01-25'
+        - certificate_url: https://foxford.ru/
+          date_end: '2022-12-12'
+          date_start: '2022-09-01'
           description: ''
-          organization: Coursera
-          organization_url: https://www.coursera.org
-          title: Neural Networks and Deep Learning
-          url: ''
-        - certificate_url: https://www.edx.org
-          date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
-          url: ''
+          organization: Онлайн-школа "Фоксфорд"
+          organization_url: https://foxford.ru/
+          title: Помощник куратора на курсах по подготовке к ЕГЭ
+          url: 'https://foxford.ru/'
     design:
       columns: '2'
   - block: collection
