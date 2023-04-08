@@ -47,15 +47,15 @@ sections:
       title: Навыки
       items:
         - name: C++
-          description: 40%
+          description: 35%
           icon: r-project
           icon_pack: fab
         - name: Анализ данных и статистика
           description: 50%
           icon: chart-line
           icon_pack: fas
-        - name: Создание контента
-          description: 65%
+        - name: Создание медиаконтента
+          description: 67%
           icon: camera-retro
           icon_pack: fas
   - block: experience
@@ -74,7 +74,7 @@ sections:
           company: ООО "Новое искусство"
           company_url: ''
           company_logo: org-gc
-          location: Москва
+          location: Moscow
           date_start: '2023-02-28'
           date_end: ''
           description: |2-
@@ -88,7 +88,7 @@ sections:
   - block: accomplishments
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Accomplish&shy;ments'
+      title: 'Достижения'
       subtitle:
       # Date format: https://wowchemy.com/docs/customization/#date-format
       date_format: Jan 2006
