@@ -88,7 +88,7 @@ sections:
   - block: accomplishments
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Достижения'
+      title: 'Достижен-ия'
       subtitle:
       # Date format: https://wowchemy.com/docs/customization/#date-format
       date_format: Jan 2006
@@ -111,7 +111,7 @@ sections:
   - block: collection
     id: posts
     content:
-      title: Recent Posts
+      title: Посты
       subtitle: ''
       text: ''
       # Choose how many pages you would like to display (0 = all pages)
