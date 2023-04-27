@@ -48,9 +48,27 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'demid.nikita2016@yandex.ru'
+  - icon: book-open
+    icon_pack: fas
+    link: 'https://www.elibrary.ru/nikdem1'
   - icon: github
     icon_pack: fab
     link: https://github.com/nikdem1
+  - icon: orcid
+    icon_pack: fab
+    link: https://orcid.org/0009-0003-2796-1477
+  - icon: researchgate
+    icon_pack: fab
+    link: https://www.researchgate.net/profile/Nikita-Demidovich
+  - icon: youtube
+    icon_pack: fab
+    link: https://www.youtube.com/channel/UCJ-hMApv0KSE3eT7YFJBK8A
+  - icon: accessible-icon
+    icon_pack: fab
+    link: https://independent.academia.edu/%D0%9D%D0%94%D0%B5%D0%BC%D0%B8%D0%B4%D0%BE%D0%B2%D0%B8%D1%87
+  - icon: adjust
+    icon_pack: fas
+    link: https://arxiv.org/nikdem1
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
