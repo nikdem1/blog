@@ -2,7 +2,7 @@
 title: Научный проект "Неравновестная агрегация, фракталы"
 summary: Проект студентов академической группы НКНбд-01-22
   - Математическое моделирование
-date: '2025-03-22T00:00:00Z'
+date: '2025-03-21T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
