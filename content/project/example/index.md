@@ -1,9 +1,8 @@
 ---
-title: Example Project
-summary: An example of using the in-built project page.
-tags:
-  - Deep Learning
-date: '2016-04-27T00:00:00Z'
+title: Научный проект "Неравновестная агрегация, фракталы"
+summary: Проект студентов академической группы НКНбд-01-22
+  - Математическое моделирование
+date: '2025-03-22T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
@@ -30,12 +29,108 @@ url_video: ''
 slides: example
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+**Состав нашей команды:**
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+- Апареев Д. А.
+- Демидович Н. М.
+- Игнатенкова В. Н.
 
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
+# Первый этап проекта
 
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
+## Введение
 
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+**Актуальность**
+
+Существуют разнообразные физические процессы, основная черта которых - это неравновесная агрегация. Примеры: образование частиц сажи, рост осадков при электрическом осаждении и распространение воды в нефти. Один из важных примеров фракталов появляется при добыче нефти. Нефтяники через одну из скважин заливают в месторождение нефти воду. Из других скважин начинает выходить нефть. Однако вода распространяется внутри месторождения неравномерно, образуя т.н. "фьорды". Нефть, находящаяся в этих фьордах не выходит наружу и остается не добытой. Поэтому вместо воды необходимо найти жидкость, для которой эти фьорды будут минимальны.
+
+Во всех случаях происходит необратимое прилипание частиц к растущему кластеру из-за сильного смещения равновесия в сторону твердой фазы, и вырастают разветвленные агрегаты (рост правильных ограненных кристаллов происходит в условиях, близких к равновесным, когда возможно как прилипание частиц, так и их обратный переход в раствор).
+
+**Объект и предмет исследования**
+
+- Модели неравновесной агрегации
+- Фрактальная размерность
+- График зависимости числа частиц в кластере от радиуса гирации
+
+**Цель работы**
+
+Построить модели неравновесной агрегации и выявить их особенности. 
+
+**Задачи**
+
+- Построить модель агрегации, ограниченной диффузией
+- Построить модель баллистической агрегации
+- Найти размерность, получившихся кластеров
+- Построить график зависимости числа частиц в кластере от радиуса гирации
+
+## Теоретическое описание задачи
+
+**Фрактальная размерность**
+
+Если замкнутую ограниченную область на плоскости покрыть квадратной сеткой со стороной $\epsilon$, то минимальное число квадратов со стороной $\epsilon$, покрывающих область, будет равно:
+$$
+N(\epsilon) = -\dfrac{1}{\epsilon^2}
+$$
+
+Определим фрактальную размерность исходя из выше изложенного в общем случае следующим образом:
+
+$$
+N(\epsilon) = -\dfrac{1}{\epsilon^d}
+$$
+
+Возьмем логарифм от левой и правой частей
+
+$$
+\ln{N(\epsilon)} = -\ln{\dfrac{1}{\epsilon^d}} = \ln{\dfrac{1}{\epsilon}}^d = d \ln{\dfrac{1}{\epsilon}}  
+$$
+
+Переходя к пределу при $\epsilon$, стремящемся к нулю ($N$, стремящемся к бесконечности), получим
+
+$$
+d = \lim_{\epsilon \rightarrow 0}(\dfrac{ln(N(\epsilon))}{ln(\dfrac{1}{\epsilon})})
+$$
+
+Это равенство является определением размерности, которая обозначается $d$. Для построения зависимости между оценкой радиуса и массы кластера (линейна) на логарифмической диаграмме, функция имеет вид:
+
+$$
+ln(N(\epsilon)) = D ln(R) + b,
+$$
+
+где $D$ – фрактальная размерность, $N(\epsilon)$ – число частиц на расстоянии меньшем чем $R$, $R$ – радиус 
+
+**Агрегация, ограниченная диффузией**
+
+Агрегация, ограниченная диффузией (diffusion-limited aggregation, DLA) - это первая модель агрегации, разработанная Виттеном и Сандером в 1981 году. Она представляет шумный рост, ограниченный диффузией. Этот процесс довольно распространен в природе, и простой алгоритм дает хорошее представление о крупномасштабной структуре многих природных объектов.
+
+Алгоритм следующий: предположим, что мы начинаем с центра зарождения, единственной «частицы» радиуса $a$, которую мы располагаем в начале координат. Затем выпускаем еще одну подобную частицу в случайной точке на некотором расстоянии. Новой частице разрешается диффундировать, т. е. делать шаги длиной $a$ в случайных направлениях, пока она не окажется в пределах $a$ от первой. Эту частицу фиксируем на данном месте и далее запускаем второго ходока. Она диффундирует до тех пор, пока не окажется в пределах $a$ от любой из первых частиц, и так далее. Кластер DLA размера $N$ является результатом добавления $N-1$ частиц к исходному центру.
+
+У получающегося кластера может быть много различных форм, преимущественно зависящих от трёх факторов:
+
+- положение центра агрегации;
+- начальное положение движущейся частицы;
+- алгоритм моделирования движения.
+
+По алгоритму движения частицы существует два подхода к базовому моделированию DLA. Один работает с фиксированной сеткой, а другой — без сетки и использует частицы. Эта разница отражена во многих методах моделирования. Сетки обеспечивают жесткую структуру, которая упрощает модель. В этом случае частица может двигаться по сетке только к одному из четырех соседей. Работа без сетки дает больше свободы, но обычно создает дополнительную сложность, что может означать, что ее сложнее программировать или требуется больше вычислений.
+
+**Агрегация, ограниченная химический реакцией**
+
+Если необходимо проанализировать процессы, кинетика которых определяется химическим взаимодействием, то обычно рассматривают не равную единице вероятность прилипания частицы к кластеру при столкновении. Эта группа моделей получила название reaction limited aggregation (RLA) — "ограниченная реакцией агрегация".
+
+Поскольку частицы слипаются лишь после нескольких столкновений, мономер имеет возможность проникнуть глубже внутрь кластера, поэтому формирующиеся агрегаты должны быть более плотными, чем в случае модели DLA. Вероятность прилипания к единственному соседу должна быть меньше, чем к двум, так как в последнем случае могут образоваться две связи. Очевидно, что связь тем прочнее, чем больше соседей у данной частицы. Поэтому вероятность прилипания должна увеличиваться при росте числа занятых соседних узлов. Повышение вероятности прилипания частицы к точкам кластера, характеризующимся более высокой локальной плотностью, также способствует его более компактному росту. Действительно, введение в модель указанных изменений в совокупности с постепенным уменьшением вероятности реакции приводит к непрерывному увеличению фрактальной размерности кластеров вплоть до размерности пространства.
+
+**Баллистическая агрегация**
+
+Баллистическая модель (Ballistic particle-cluster aggregation, BPCA) похожа на модель агрегации, ограниченной диффузией. Отличие состоит в том, что зародившееся частица, двигается по прямой в случайно выбранном направлении до столкновения с частицей и последующей агрегацией. Особенностью данной модели является высокая скорость вычислений, так как направление выбирается один раз и частица агрегируется или выходит за границы радиуса уничтожения намного быстрее. Итоговая структура, сгенерированная при помощи данного метода, получается более плотной, чем при использовании DLA, поскольку в алгоритме частица движется прямолинейно, а не моделирует броуновское движение, которое вносит большую разветвленность в структуру.
+
+**Кластер-кластерная агрегация**
+
+Дальнейшим развитием модели DLA являлась модель кластер-кластерной агрегации, ограниченной диффузией (diffusion-limited cluster aggregation, DLCA), которая относится к классу моделей "кластер-кластер". В модели DLCA на поле располагаются подвижные частицы в соответствии с пористостью образца. Частицы совершают хаотичное движение, агрегируя друг с другом при столкновении, пока не образуют единую структуру - кластер, который также движется и может агрегироваться с другими кластерами.
+
+## Выводы
+
+Во время выполнения первого этапа группового проекта мы сделали теоретическое описание моделей неравновесной агрегации и определили задачи дальнейшего исследования.
+
+## Список литературы{.unnumbered}
+
+1. Медведев Д.А. и др. Моделирование физических процессов и явлений на ПК: Учеб. пособие. Новосибирск: Новосиб. гос. ун-т, 2010. 101 с.
+2. Sander L.M. Diffusion-limited aggregation: A kinetic critical phenomenon? Contemporary Physics, 2000.
+3. Тыртышников А.Ю. и др. Сравнение алгоритмов DLA и RLA при моделировании пористых структур. НИИ «Центрпрограммсистем», 2017. 244 с.
