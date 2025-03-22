@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Academic</title>
+    <link>https://example.com/post/</link>
+      <atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 29 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Posts</title>
+      <link>https://example.com/post/</link>
+    </image>
+    
+    <item>
+      <title>Оформление отчёта</title>
+      <link>https://example.com/post/report/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/report/</guid>
+      <description>&lt;p&gt;Данный пост является демо-версией. В нём представлен шаблон отчёта по лабораторной работе.&lt;/p&gt;
+&lt;h1 id=&#34;шаблон-отчёта-по-лабораторной-работе&#34;&gt;Шаблон отчёта по лабораторной работе&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;front-matter&#34;&gt;Front matter&lt;/h2&gt;
+&lt;p&gt;title: &amp;ldquo;Шаблон отчёта по лабораторной работе&amp;rdquo;
+subtitle: &amp;ldquo;Простейший вариант&amp;rdquo;
+author: &amp;ldquo;Дмитрий Сергеевич Кулябов&amp;rdquo;&lt;/p&gt;
+&lt;h2 id=&#34;generic-otions&#34;&gt;Generic otions&lt;/h2&gt;
+&lt;p&gt;lang: ru-RU
+toc-title: &amp;ldquo;Содержание&amp;rdquo;&lt;/p&gt;
+&lt;h2 id=&#34;bibliography&#34;&gt;Bibliography&lt;/h2&gt;
+&lt;p&gt;bibliography: bib/cite.bib
+csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl&lt;/p&gt;
+&lt;h2 id=&#34;pdf-output-format&#34;&gt;Pdf output format&lt;/h2&gt;
+&lt;p&gt;toc: true # Table of contents
+toc-depth: 2
+lof: true # List of figures
+lot: true # List of tables
+fontsize: 12pt
+linestretch: 1.5
+papersize: a4
+documentclass: scrreprt&lt;/p&gt;
+&lt;h2 id=&#34;i18n-polyglossia&#34;&gt;I18n polyglossia&lt;/h2&gt;
+&lt;p&gt;polyglossia-lang:
+name: russian
+options:
+- spelling=modern
+- babelshorthands=true
+polyglossia-otherlangs:
+name: english&lt;/p&gt;
+&lt;h2 id=&#34;i18n-babel&#34;&gt;I18n babel&lt;/h2&gt;
+&lt;p&gt;babel-lang: russian
+babel-otherlangs: english&lt;/p&gt;
+&lt;h2 id=&#34;fonts&#34;&gt;Fonts&lt;/h2&gt;
+&lt;p&gt;mainfont: PT Serif
+romanfont: PT Serif
+sansfont: PT Sans
+monofont: PT Mono
+mainfontoptions: Ligatures=TeX
+romanfontoptions: Ligatures=TeX
+sansfontoptions: Ligatures=TeX,Scale=MatchLowercase
+monofontoptions: Scale=MatchLowercase,Scale=0.9&lt;/p&gt;
+&lt;h2 id=&#34;biblatex&#34;&gt;Biblatex&lt;/h2&gt;
+&lt;p&gt;biblatex: true
+biblio-style: &amp;ldquo;gost-numeric&amp;rdquo;
+biblatexoptions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;parentracker=true&lt;/li&gt;
+&lt;li&gt;backend=biber&lt;/li&gt;
+&lt;li&gt;hyperref=auto&lt;/li&gt;
+&lt;li&gt;language=auto&lt;/li&gt;
+&lt;li&gt;autolang=other*&lt;/li&gt;
+&lt;li&gt;citestyle=gost-numeric&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;pandoc-crossref-latex-customization&#34;&gt;Pandoc-crossref LaTeX customization&lt;/h2&gt;
+&lt;p&gt;figureTitle: &amp;ldquo;Рис.&amp;rdquo;
+tableTitle: &amp;ldquo;Таблица&amp;rdquo;
+listingTitle: &amp;ldquo;Листинг&amp;rdquo;
+lofTitle: &amp;ldquo;Список иллюстраций&amp;rdquo;
+lotTitle: &amp;ldquo;Список таблиц&amp;rdquo;
+lolTitle: &amp;ldquo;Листинги&amp;rdquo;&lt;/p&gt;
+&lt;h2 id=&#34;misc-options&#34;&gt;Misc options&lt;/h2&gt;
+&lt;p&gt;indent: true
+header-includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;\usepackage{indentfirst}&lt;/li&gt;
+&lt;li&gt;\usepackage{float} # keep figures where there are in the text&lt;/li&gt;
+&lt;li&gt;\floatplacement{figure}{H} # keep figures where there are in the text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;цель-работы&#34;&gt;Цель работы&lt;/h1&gt;
+&lt;p&gt;Здесь приводится формулировка цели лабораторной работы. Формулировки
+цели для каждой лабораторной работы приведены в методических
+указаниях.&lt;/p&gt;
+&lt;p&gt;Цель данного шаблона &amp;mdash; максимально упростить подготовку отчётов по
+лабораторным работам.  Модифицируя данный шаблон, студенты смогут без
+труда подготовить отчёт по лабораторным работам, а также познакомиться
+с основными возможностями разметки Markdown.&lt;/p&gt;
+&lt;h1 id=&#34;задание&#34;&gt;Задание&lt;/h1&gt;
+&lt;p&gt;Здесь приводится описание задания в соответствии с рекомендациями
+методического пособия и выданным вариантом.&lt;/p&gt;
+&lt;h1 id=&#34;теоретическое-введение&#34;&gt;Теоретическое введение&lt;/h1&gt;
+&lt;p&gt;Здесь описываются теоретические аспекты, связанные с выполнением работы.&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;Например, в табл. [-@tbl:std-dir] приведено краткое описание стандартных каталогов Unix.&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;Описание некоторых каталогов файловой системы GNU Linux {#tbl:std-dir}&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Имя каталога&lt;/th&gt;
+&lt;th&gt;Описание каталога&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;/&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Корневая директория, содержащая всю файловую&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;/bin &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Основные системные утилиты, необходимые как в однопользовательском режиме, так и при обычной работе всем пользователям&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;/etc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Общесистемные конфигурационные файлы и файлы конфигурации установленных программ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;/home&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Содержит домашние директории пользователей, которые, в свою очередь, содержат персональные настройки и данные пользователя&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;/media&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Точки монтирования для сменных носителей&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;/root&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Домашняя директория пользователя  &lt;code&gt;root&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;/tmp&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Временные файлы&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;/usr&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Вторичная иерархия для данных пользователя&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Более подробно об Unix см. в [@gnu-doc:bash;@newham:2005:bash;@zarrelli:2017:bash;@robbins:2013:bash;@tannenbaum:arch-pc:ru;@tannenbaum:modern-os:ru].&lt;/p&gt;
+&lt;h1 id=&#34;выполнение-лабораторной-работы&#34;&gt;Выполнение лабораторной работы&lt;/h1&gt;
+&lt;p&gt;Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. [-@fig:001])&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;image/placeimg_800_600_tech.jpg&#34; alt=&#34;Название рисунка&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+{ #fig:001 width=70% }&lt;/p&gt;
+&lt;h1 id=&#34;выводы&#34;&gt;Выводы&lt;/h1&gt;
+&lt;p&gt;Здесь кратко описываются итоги проделанной работы.&lt;/p&gt;
+&lt;h1 class=&#34;unnumbered&#34; id=&#34;список-литературы&#34;&gt;Список литературы&lt;/h1&gt;
+&lt;p&gt;Здесь будет список использованной литературы.
+::: {#refs}
+:::&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Пост по прошедшей неделе</title>
+      <link>https://example.com/post/last_week/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/last_week/</guid>
+      <description>&lt;p&gt;Данный пост является демо-версией. В нём описаны запланированные и выполненные цели на прошедшей неделе.&lt;/p&gt;
+&lt;h2 id=&#34;цели-на-прошедшую-неделю&#34;&gt;Цели на прошедшую неделю&lt;/h2&gt;
+&lt;h3 id=&#34;поставленные-цели&#34;&gt;Поставленные цели&lt;/h3&gt;
+&lt;p&gt;На прошедшую неделю были поставлены следующие цели:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Выполнить лабораторную работы №12 по дисциплине &amp;ldquo;Операционные системы&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Выполнить четвертый этап индивидуального проекта по дисциплине &amp;ldquo;Операционные системы&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Выполнить домашнее задание по английскому языку.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;выполненные-цели&#34;&gt;Выполненные цели&lt;/h3&gt;
+&lt;p&gt;На прошедшей неделю были выполнены следующие цели:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Выполнена лабораторную работы №12 по дисциплине &amp;ldquo;Операционные системы&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Выполнен четвертый этап индивидуального проекта по дисциплине &amp;ldquo;Операционные системы&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Выполнено домашнее задание по английскому языку.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Пост по прошедшей неделе</title>
+      <link>https://example.com/post/writing-technical-content/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/writing-technical-content/</guid>
+      <description>&lt;p&gt;Данный пост является демо-версией. В нём описаны запланированные и выполненные цели на прошедшей неделе.&lt;/p&gt;
+&lt;h2 id=&#34;цели-на-прошедшую-неделю&#34;&gt;Цели на прошедшую неделю&lt;/h2&gt;
+&lt;h3 id=&#34;поставленные-цели&#34;&gt;Поставленные цели&lt;/h3&gt;
+&lt;p&gt;На прошедшую неделю были поставлены следующие цели:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Выполнить лабораторную работы №9 по дисциплине &amp;ldquo;Операционные системы&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Выполнить третий этап индивидуального проекта по дисциплине &amp;ldquo;Операционные системы&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Выполнить домашнее задание по английскому языку.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Научиться играть на скрипке.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;выполненные-цели&#34;&gt;Выполненные цели&lt;/h3&gt;
+&lt;p&gt;На прошедшей неделю были выполнены следующие цели:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Выполнена лабораторную работы №9 по дисциплине &amp;ldquo;Операционные системы&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Выполнен третий этап индивидуального проекта по дисциплине &amp;ldquo;Операционные системы&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Выполнено домашнее задание по английскому языку.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Система контроля версий Git</title>
+      <link>https://example.com/post/getting-started/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/getting-started/</guid>
+      <description>&lt;h2 id=&#34;система-контроля-версий-git&#34;&gt;Система контроля версий Git&lt;/h2&gt;
+&lt;p&gt;Системы контроля версий (Version Control System, VCS) применяются при
+работе нескольких человек над одним проектом. Обычно основное дерево проекта хранится в локальном или удалённом репозитории, к которому настроен
+доступ для участников проекта. При внесении изменений в содержание проекта
+система контроля версий позволяет их фиксировать, совмещать изменения,
+произведённые разными участниками проекта, производить откат к любой
+более ранней версии проекта, если это требуется.
+В классических системах контроля версий используется централизованная
+модель, предполагающая наличие единого репозитория для хранения файлов.
+Выполнение большинства функций по управлению версиями осуществляется
+специальным сервером.Участник проекта (пользователь) перед началом работы
+посредством определённых команд получает нужную ему версию файлов. После
+внесения изменений, пользователь размещает новую версию в хранилище. При
+этом предыдущие версии не удаляются из центрального хранилища и к ним
+можно вернуться в любой момент. Сервер может сохранять не полную версию
+изменённых файлов, а производить так называемую дельта-компрессию — сохранять только изменения между последовательными версиями, что позволяет
+уменьшить объём хранимых данных.
+Системы контроля версий поддерживают возможность отслеживания и разрешения конфликтов, которые могут возникнуть при работе нескольких человек
+над одним файлом. Можно объединить (слить) изменения, сделанные разными
+участниками (автоматически или вручную), вручную выбрать нужную версию,
+отменить изменения вовсе или заблокировать файлы для изменения. В зависимости от настроек блокировка не позволяет другим пользователям получить
+рабочую копию или препятствует изменению рабочей копии файла средствами
+файловой системы ОС, обеспечивая таким образом, привилегированный доступ
+только одному пользователю, работающему с файлом.
+Системы контроля версий также могут обеспечивать дополнительные, более
+гибкие функциональные возможности. Например, они могут поддерживать
+работу с несколькими версиями одного файла, сохраняя общую историю изменений до точки ветвления версий и собственные истории изменений каждой
+ветви. Кроме того, обычно доступна информация о том, кто из участников, когда и какие изменения вносил. Обычно такого рода информация хранится в
+журнале изменений, доступ к которому можно ограничить.
+В отличие от классических, в распределённых системах контроля версий центральный репозиторий не является обязательным.
+Среди классических VCS наиболее известны CVS, Subversion, а среди распределённых — Git, Bazaar, Mercurial. Принципы их работы схожи, отличаются они
+в основном синтаксисом используемых в работе команд.&lt;/p&gt;
+&lt;p&gt;Система контроля версий Git представляет собой набор программ командной строки. Доступ к ним можно получить из терминала посредством ввода
+команды git с различными опциями.
+Благодаря тому, что Git является распределённой системой контроля версий,
+резервную копию локального хранилища можно сделать простым копированием или архивацией.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Язык разметки Markdown</title>
+      <link>https://example.com/post/jupyter/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/jupyter/</guid>
+      <description>&lt;h2 id=&#34;базовые-сведения-о-markdown&#34;&gt;Базовые сведения о Markdown&lt;/h2&gt;
+&lt;p&gt;Чтобы создать заголовок, используйте знак #, например:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;## This is heading 2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### This is heading 3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#### This is heading 4
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Чтобы задать для текста полужирное начертание, заключите его в двойные звездочки:&lt;/p&gt;
+&lt;p&gt;This text is &lt;strong&gt;bold&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Чтобы задать для текста курсивное начертание, заключите его в одинарные звездочки:&lt;/p&gt;
+&lt;p&gt;This text is &lt;em&gt;italic&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Чтобы задать для текста полужирное и курсивное начертание, заключите его в тройные звездочки:&lt;/p&gt;
+&lt;p&gt;This is text is both &lt;em&gt;&lt;strong&gt;bold and italic&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Упорядоченный список можно отформатировать с помощью соответствующих цифр:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First instruction&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Sub-instruction&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sub-instruction&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Second instruction&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Неупорядоченный (маркированный) список можно отформатировать с помощью звездочек или тире:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;List item 1&lt;/li&gt;
+&lt;li&gt;List item 2&lt;/li&gt;
+&lt;li&gt;List item 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Синтаксис Markdown для встроенной ссылки состоит из части &lt;code&gt;[link text]&lt;/code&gt;, представляющей текст гиперссылки, и части (file-name.md) – URL-адреса или имени файла, на который дается ссылка:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[link text](file-name.md)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;или&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[link text](http://example.com/ &amp;quot;Необязательная подсказка&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Markdown поддерживает как встраивание фрагментов кода в предложение, так и их размещение между предложениями в виде отдельных огражденных блоков. Огражденные блоки кода — это простой способ выделить синтаксис для фрагментов кода. Общий формат огражденных блоков кода:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;your code goes in here
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;оформление-формул-в-markdown&#34;&gt;Оформление формул в Markdown&lt;/h2&gt;
+&lt;p&gt;Ниже приведены пример оформления формул:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$\sin^2 (x) + \cos^2 (x) = 1$&lt;/code&gt; - $\sin^2 (x) + \cos^2 (x) = 1$.
+со ссылкой в тексте «Смотри формулу ({-eq. 4.1}).» записывается как:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\sin^2 (x) + \cos^2 (x) = 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$$ {#eq:eq1}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;оформление-изображений-в-markdown&#34;&gt;Оформление изображений в Markdown&lt;/h2&gt;
+&lt;p&gt;В Markdown вставить изображение в документ можно с помощью непосредственного указания адреса изображения. Синтаксис данной команды выглядит следующим образом:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;![Подпись к рисунку](/путь/к/изображению.jpg &amp;quot;Необязательная подсказка&amp;quot;) {#fig:fig1 width=&amp;quot;70%&amp;quot;}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Здесь:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;в квадратных скобках указывается подпись к изображению.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;в круглых скобках указывается URL-адрес или относительный путь изображения, а также (необязательно) всплывающую подсказку, заключённую в двойные или одиночные кавычки.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;в фигурных скобках указывается идентификатор изображения (#fig:fig1) для ссылки на него по тексту и размер изображения относительно ширины страницы (width=90%).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ссылка на изображение (рис. 4.1) может быть оформлена следующим образом:
+&lt;code&gt;(рис. [-@fig:fig1])&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
