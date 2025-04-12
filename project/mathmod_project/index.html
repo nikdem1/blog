@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Неравновесная агрегация и фракталы</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #1a202c;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    code, pre {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .team {
+      margin: 1em 0;
+      padding-left: 1em;
+    }
+    .team li {
+      margin-bottom: 4px;
+    }
+    .figure {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .figure img {
+      border: 1px solid #ccc;
+      padding: 4px;
+      background: white;
+    }
+    .figure caption {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 5px;
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Научный проект: Неравновесная агрегация и фракталы</h1>
+    <p><strong>Группа:</strong> НКНбд-01-22</p>
+    <p><strong>Дата:</strong> 22 марта 2025</p>
+  </header>
+
+  <section>
+    <h2>Состав команды</h2>
+    <ul class="team">
+      <li>Апареев Д. А.</li>
+      <li>Демидович Н. М.</li>
+      <li>Игнатенкова В. Н.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Первый этап проекта</h2>
+    <h3>Введение</h3>
+    <p><strong>Актуальность:</strong> Существуют разнообразные физические процессы, основная черта которых — неравновесная агрегация...</p>
+
+    <h3>Цель и задачи</h3>
+    <p><strong>Цель:</strong> Построить модели неравновесной агрегации и выявить их особенности.</p>
+    <ul>
+      <li>Построить модель агрегации, ограниченной диффузией</li>
+      <li>Построить модель баллистической агрегации</li>
+      <li>Найти размерность кластеров</li>
+      <li>Построить график зависимости количества частиц от радиуса гирации</li>
+    </ul>
+
+    <h3>Фрактальная размерность</h3>
+    <p>Формула определения фрактальной размерности:</p>
+    <p>\[
+      d = \lim_{\epsilon \rightarrow 0}\left(\frac{\ln N(\epsilon)}{\ln \frac{1}{\epsilon}}\right)
+    \]</p>
+
+    <h3>Модели агрегации</h3>
+    <ul>
+      <li><strong>DLA (Diffusion Limited Aggregation):</strong> частицы двигаются случайно и прилипают к кластеру.</li>
+      <li><strong>RLA (Reaction Limited Aggregation):</strong> вероятность прилипания зависит от количества соседей.</li>
+      <li><strong>BPCA (Ballistic Aggregation):</strong> частицы двигаются по прямой до столкновения.</li>
+      <li><strong>DLCA (Cluster-Cluster Aggregation):</strong> кластеры двигаются и соединяются друг с другом.</li>
+    </ul>
+
+    <h3>Выводы</h3>
+    <p>Проведён анализ моделей агрегации, заложена теоретическая база для дальнейшего моделирования.</p>
+  </section>
+
+  <section>
+    <h2>Второй этап проекта</h2>
+    <h3>Цель и задачи</h3>
+    <p><strong>Цель:</strong> Реализация алгоритма DLA на сетке.</p>
+    <ul>
+      <li>Описать алгоритм DLA</li>
+      <li>Разработать реализацию на сетке</li>
+    </ul>
+
+    <h3>Алгоритм</h3>
+    <div class="figure">
+      <img src="image/DLA.png" alt="Блок-схема алгоритма DLA">
+      <caption>Блок-схема алгоритма DLA</caption>
+    </div>
+
+    <div class="figure">
+      <img src="image/dla_alg.png" alt="Реализация DLA">
+      <caption>Алгоритм реализации на сетке</caption>
+    </div>
+
+    <h3>Генерация позиции частицы</h3>
+    <p>\[
+      x = r \cdot \cos(\theta), \quad y = r \cdot \sin(\theta)
+    \]</p>
+    <div class="figure">
+      <img src="image/randomAtRadius.png" alt="Выпускание частицы">
+      <caption>Выпускание частицы с заданного радиуса</caption>
+    </div>
+
+    <h3>Случайное блуждание</h3>
+    <p>\[
+      S_n = \sum^n_{i=1}{v_n^*}, \quad P(v_{i+1} = v_n^*) = \frac{1}{4}
+    \]</p>
+
+    <h3>Функция движения</h3>
+    <div class="figure">
+      <img src="image/checkAround.png" alt="Функция checkAround">
+      <caption>Проверка местоположения и движения частицы</caption>
+    </div>
+
+    <h3>Выводы</h3>
+    <p>Описаны алгоритмы моделирования агрегации, подготовлена реализация на Python/Matlab (возможно, зависит от контекста).</p>
+  </section>
+
+  <section>
+    <h2>Список литературы</h2>
+    <ol>
+      <li>Медведев Д.А. и др. Моделирование физических процессов и явлений на ПК. Новосибирск, 2010.</li>
+      <li>Sander L.M. Diffusion-limited aggregation: A kinetic critical phenomenon? Contemporary Physics, 2000.</li>
+      <li>Тыртышников А.Ю. и др. Сравнение алгоритмов DLA и RLA при моделировании пористых структур. 2017.</li>
+    </ol>
+  </section>
+
+</body>
+</html>
